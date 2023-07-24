@@ -4,6 +4,7 @@
         <input type="submit" value="Submit" name="submit">
 </form>
 
+
 <?php
     if(isset($POST['submit'])&&$_POST['submit']){
     $name=$_POST['name'];
