@@ -1,0 +1,104 @@
+#header{
+    background-color:rgb(223, 103, 23);
+}
+#menu{
+    background-color:rgb(161, 227, 236);
+    width: 20%;
+    margin: 0 4%;
+    float: left;
+}
+#main{
+    background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    width: 67.5%;
+    margin: 0 2.5% 0 0;
+    float: left;
+}
+#footer{
+    clear: left;
+    background-color:dimgray;
+    padding-left: 15px;
+}
+.menulist{
+    background-color:rgb(161, 227, 236);
+    font-family:sans-serif;
+    font-weight: bold;
+    margin: 1% 9%;
+    color: rgb(255, 0, 242);
+}
+
+p#title{
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+p#abtract{
+    font-style: italic;
+    text-align: justify;
+    padding: 0 5%;
+}
+
+p{
+    padding: 0 5%;
+    text-align: justify;
+}
+img{
+    width: 50%;
+    margin: 1% 5%;
+}
+a{
+    color:blue;
+    text-decoration: none;
+}
+a:hover{
+    color: cadetblue;
+}
+
+a.menu{
+    color:rgb(235, 70, 67);
+}
+
+table#userRegistration{
+    margin: auto;
+    width: 70%;
+    background: linear-gradient(135deg, rgba(34,193,195,1) 0%,rgba(253,187,45,1) 100%);
+    padding: 0.5%;
+}
+
+th#userTH{
+    background: linear-gradient(135deg, rgba(34,193,195,1) 0%,rgba(253,187,45,1) 100%);;
+    color: red;
+    font-weight: bold;
+}
+
+tr#userRegistration{
+    text-align: center;
+}
+
+td.tbDetail{
+    padding-left: 1%;
+}
+
+table#tbLogin{
+    margin: auto;
+    width: 40%;
+    background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    border-radius: 1%;
+    padding: 0.5%;
+}
+
+th#thAddProduct{
+    text-align: center;
+    font-size: large;
+    color:rgb(175, 15, 47);
+    background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+    background-attachment: fixed;
+}
+
+td#btnAddProduct{
+    text-align: center;
+    padding-top: 2%;
+}
+.btn{
+    background-color:rgb(14, 171, 137);
+}
