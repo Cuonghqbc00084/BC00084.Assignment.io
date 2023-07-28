@@ -40,7 +40,7 @@
             <nav class="navbar navbar-light bg-light justify-content-between">
                <div id="mySidenav" class="sidenav">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                  <a href="index.php?page=Home">Home</a>
+                  <a href="index.php?page=index">Home</a>
                   <a href="index.php?page=Product">Product</a>
                   <a href="about.html">About</a>
                   <a href="index.php?page=Registration">Registration</a>
@@ -50,7 +50,7 @@
                <a class="logo" href="index.html"><img src="images/logo.png"></a></a>
                <form class="form-inline ">
                   <div class="login_text">
-                     <ul>
+                  <ul>
                      
 
                <?php
@@ -104,7 +104,7 @@
       </div>
       <!-- banner section end -->
       <!-- product section start -->
-     
+
       <div id="main">
         <?php
             if(isset($_GET['page'])){
@@ -133,6 +133,8 @@
             }
         ?>
     </div>
+     
+    
       <!-- product section end -->
       <!-- about section start -->
      

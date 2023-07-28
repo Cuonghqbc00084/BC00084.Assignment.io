@@ -2,7 +2,7 @@
 //    session_start();
 
     if(isset($_POST['btnLogin'])){
-        require_once ("css/admin/DatabaseConnect.php");
+        require_once ("admin/DatabaseConnect.php");
         
         $username = $_POST['username'];
         $password = $_POST['password'];
@@ -64,6 +64,9 @@
     </form>
 </body>
 </html>
+
+
+
 
 
 
