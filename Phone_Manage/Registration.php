@@ -1,6 +1,6 @@
 <?php
     if(isset($_POST['registrationBtn'])){
-        require_once "css/admin/DatabaseConnect.php";
+        require_once "admin/DatabaseConnect.php";
         
         $fullname = $_POST['fullname'];
         $email = $_POST['email'];

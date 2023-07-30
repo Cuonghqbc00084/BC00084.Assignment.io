@@ -10,5 +10,5 @@
         die("Connect Database server failed!" . $conn->connect_error);
     }
     else
-        echo "Connect Database server successful.";
+        // echo "Connect Database server successful.";
 ?>

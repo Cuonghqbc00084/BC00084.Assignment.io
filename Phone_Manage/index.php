@@ -40,42 +40,32 @@
             <nav class="navbar navbar-light bg-light justify-content-between">
                <div id="mySidenav" class="sidenav">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                  <a href="index.php?page=index">Home</a>
+                  <a href="index.php?page=Home">Home</a>
+                  <!--<a href="index.php?page=index">Home</a>-->
                   <a href="index.php?page=Product">Product</a>
                   <a href="about.html">About</a>
                   <a href="index.php?page=Registration">Registration</a>
                   <a href="index.php?page=Contact">Contact</a>
                </div>
+
                <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
                <a class="logo" href="index.html"><img src="images/logo.png"></a></a>
                <form class="form-inline ">
                   <div class="login_text">
-                  <ul>
-                     
-
-               <?php
-                // Giả sử biến $isLoggedIn xác định trạng thái đăng nhập (true nếu đã đăng nhập, false nếu chưa).
-                if(isset($_SESSION['user'])){
-
-                // Kiểm tra nếu đã đăng nhập, thì hiển thị liên kết tới trang cá nhân và trang đăng xuất.
-                    echo '<li><a href="profile.php"><img src="images/user-icon.png"></a></li>';
-                    echo '<li><a href="index.php?page=Cart"><img src="images/bag-icon.png"></a></li>';
-                    echo '<li><a href="logout.php"><img src="images/logout.png" width="30px"></a></li>';
-                    echo '<li><a href="#"><img src="images/search-icon.png"></a></li>';
-
-                } else {
-                    // Nếu chưa đăng nhập, hiển thị liên kết tới trang đăng nhập và trang đăng ký.
-                    echo '<li><a href="login.php">></a></li>';
-                    echo '<li><a href="registration.php"></a></li>';
-                }
-
-                ?>
-
-                     </ul>
-
-       
+                 
+                  <?php
+            if(isset($_SESSION['user'])){
+                echo '<p class="menulist"><a class="menu" href="Logout.php">Logout</a></p>';
+            }
+            else{
+                echo '<p class="menulist"><a class="menu" href="index.php?page=Login">Login</a></p>';
+                echo '<p class="menulist"><a class="menu" href="index.php?page=Registration">Registration</a></p>';
+            }
+        ?>
                   </div>
 
+
+                  
                </form>
             </nav>
          </div>

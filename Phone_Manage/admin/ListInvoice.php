@@ -1,5 +1,5 @@
 <?php
-    require_once ("DatabaseConnect.php");
+    require_once ("admin/DatabaseConnect.php");
 
     $sql = "SELECT * FROM invoice
             INNER JOIN user ON invoice.user_id=user.user_ID";
