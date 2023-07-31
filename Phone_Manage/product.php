@@ -3,7 +3,6 @@
     <div class="row">
                <div class="col-sm-12">
                   <h1 class="product_taital">Our Products</h1>
-                  <p class="product_text">incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                </div>
             </div>
 
