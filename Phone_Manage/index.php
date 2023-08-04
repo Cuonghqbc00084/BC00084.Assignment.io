@@ -41,8 +41,7 @@
                <div id="mySidenav" class="sidenav">
                   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                   <a href="index.php?page=Home">Home</a>
-                  <!--<a href="index.php?page=index">Home</a>-->
-                  <a href="index.php?page=Product">Product</a>
+                  <a href="index.php?page=product">Product</a>
                   <a href="about.html">About</a>
                   <a href="index.php?page=Registration">Registration</a>
                   <a href="index.php?page=Contact">Contact</a>
@@ -55,11 +54,15 @@
                  
                   <?php
             if(isset($_SESSION['user'])){
-                echo '<p class="menulist"><a class="menu" href="Logout.php">Logout</a></p>';
+               // echo '<p><a href="index.php?page=Login">Login</a></p>';
+               // echo '<li><a href="Login.php"><img src="images/login.png" width="30px"></a></li>';
+             
+
             }
             else{
-                echo '<p class="menulist"><a class="menu" href="index.php?page=Login">Login</a></p>';
-                echo '<p class="menulist"><a class="menu" href="index.php?page=Registration">Registration</a></p>';
+               echo '<li><a href="Login.php"><img src="images/login.png" width="30px"></a></li>';
+               echo '<li><a href="Logout.php"><img src="images/logout.png" width="30px"></a></li>';
+             
             }
         ?>
                   </div>
@@ -80,7 +83,7 @@
                      <div class="row">
                         <div class="col-sm-6">
                            <h1 class="banner_taital">Smart<br>Phone</h1>
-                           <p class="banner_text">Ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                           <p class="banner_text">Product quality!</p>
                            <div class="read_bt"><a href="#">Buy Now</a></div>
                         </div>
                         <div class="col-sm-6">
@@ -98,28 +101,20 @@
       <div id="main">
         <?php
             if(isset($_GET['page'])){
-                if($_GET['page'] === "Introduction")
-                    require_once ("Introduction.html");
+                if($_GET['page'] === "About")
+                    require_once ("About.html");
                 else if($_GET['page'] === "Registration")
                     require_once ("Registration.php");
-                else if($_GET['page'] === "Product")
-                    require_once ("Product.php");
-                else if($_GET['page'] === "ProductDetail")
-                    require_once ("ProductDetail.php");
+                else if($_GET['page'] === "product")
+                    require_once ("product.php");
                 else if($_GET['page'] === "Login")
                     require_once ("Login.php");
-                else if($_GET['page'] === "Cart")
-                    require_once ("Cart.php");
-                else if($_GET['page'] === "Profile")
-                    require_once ("Profile.php");
-                else if($_GET['page'] === "ModifyProfile")
-                    require_once ("ModifyProfile.php");
                 else if($_GET['page'] === "Contact")
                     require_once ("Contact.php");
                 else if($_GET['page'] === "Home")
                     require_once ("Home.php");
             }else{
-                require_once ("Product.php");
+                require_once ("product.php");
             }
         ?>
     </div>
@@ -188,7 +183,7 @@
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a></p>
+            <p class="copyright_text">2023 All Rights Reserved</p>
          </div>
       </div>
       <!-- copyright section end -->

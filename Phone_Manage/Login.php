@@ -28,7 +28,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User login</title>
     <!-- <link rel="stylesheet" href="CSS/Style.css"> -->
-    <link rel="stylesheet" href="css/mystyle.css">
+    <!--<link rel="stylesheet" href="css/mystyle.css">-->
     <script src="admin/JS/Product_Manage_Script.js"></script>
 </head>
 <body>

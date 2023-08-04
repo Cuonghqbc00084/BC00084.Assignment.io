@@ -30,7 +30,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <script src="JavaScript/JSscript.js"></script>
+    <link rel="stylesheet" href="css/mystyle.css">
 </head>
+
+
+    
 <body>
     <table width="95%">
         <tr>

@@ -6,6 +6,7 @@
                </div>
             </div>
 
+
         <?php
             require_once ("admin/DatabaseConnect.php");
             $sql = "SELECT * FROM product";
@@ -20,8 +21,6 @@
                                     <img src=\"admin/{$row['product_image']}\" height='100px'><br/>
                                     "?> <?php echo number_format($row['product_price'],0) ?> <?php echo "VND
                                 </center></a>
-                                <center><a href='index.php?page=Cart&action=add&id={$row['product_id']}'><button>Add to cart</button></a></center>
-
                             </td>";
                 if($i % 3 == 2)
                     echo "</tr>";
@@ -30,9 +29,7 @@
             if($i % 3 != 0)
                     echo "</tr>";
         ?>
-
     </table>
-    
 </html>
 
 
