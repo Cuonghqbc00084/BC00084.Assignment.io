@@ -19,7 +19,11 @@
     <table border="1" id="ListProduct">
         <tr id="ListProductTitle">
             <td colspan="6">LIST PRODUCT</td>
+            <div class="add-product-wrapper">
+        <a class="tdAddProduct" href="index.php?page=AddProduct">Add Product</a>
+    </div>
         </tr>
+        
         <tr>
             <th width="10%">
                 Product ID
@@ -39,6 +43,7 @@
             <th width="15%">
                 Edit
             </th>
+            
         </tr>
 
         <?php
@@ -64,14 +69,31 @@
             </td>
             <td class="tdEdit">
                 <a href="index.php?page=ModifyProduct&id=<?php echo $row['product_id']; ?>">Modify</a> |
-                <a href="index.php?page=DeleteProduct&id=<?php echo $row['product_id']; ?>">Delete</a>
+                <a href="index.php?page=DeleteProduct&id=<?php echo $row['product_id']; ?>">Delete</a> 
             </td>
         </tr>
 
         <?php
+                }
+             else {
+                // Handle case when there are no products in the database
+                echo '<tr><td colspan="6">No products found.</td></tr>';
             }
         ?>
+
 
     </table>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+

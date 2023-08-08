@@ -23,23 +23,68 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <script src="JavaScript/JSscript.js"></script>
-    <link rel="stylesheet" href="css/mystyle.css">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #4285f4;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #4285f4;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2d4373;
+        }
+    </style>
 </head>
-
-
-    
 <body>
-    <table width="95%">
-        <tr>
-            <th colspan="2">OUR CONTACT</th>
-        </tr>
+    <h1 style="text-align: center">OUR CONTACT</h1>
+    <table>
         <tr>
             <td>Address:</td>
             <td>KP Phước Thành Lập, Thị trấn Gò Quao, Kiên Giang</td>
@@ -52,34 +97,34 @@
             <td>Email:</td>
             <td>btecfptct@gmail.com</td>
         </tr>
+    </table>
 
     <form action="" method="post" onsubmit="return checkContact()">
-        <tr>
-            <th colspan="2"><hr>YOUR FEEDBACK</th>
-        </tr>
-        <tr>
-            <td>Your name:</td>
-            <td><input type="text" name="name" id="name" value="<?php echo $namedb; ?>"></td>
-        </tr>
-        <tr>
-            <td>Email:</td>
-            <td><input type="email" name="email" id="email" value="<?php echo $emaildb; ?>"></td>
-        </tr>
-        <tr>
-            <td>Title:</td>
-            <td><input type="text" name="title" id="title"></td>
-        </tr>
-        <tr>
-            <td>Message:</td>
-            <td><textarea name="message" id="message" cols="45" rows="5"></textarea></td>
-        </tr>
-        <tr style="text-align: center">
-            <td colspan="2">
-                <input type="submit" value="Submit" name="submitBtn" id="submitBtn">
-            </td>
-        </tr>
+        <h1 style="text-align: center">YOUR FEEDBACK</h1>
+        <table>
+            <tr>
+                <td>Your name:</td>
+                <td><input type="text" name="name" id="name" value="<?php echo $namedb; ?>"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" id="email" value="<?php echo $emaildb; ?>"></td>
+            </tr>
+            <tr>
+                <td>Title:</td>
+                <td><input type="text" name="title" id="title"></td>
+            </tr>
+            <tr>
+                <td>Message:</td>
+                <td><textarea name="message" id="message" cols="45" rows="5"></textarea></td>
+            </tr>
+            <tr style="text-align: center">
+                <td colspan="2">
+                    <input type="submit" value="Submit" name="submitBtn" id="submitBtn">
+                </td>
+            </tr>
+        </table>
     </form>
-    </table>
 
     <?php echo "<i><b>".$info."</b></i>"; ?>
 </body>

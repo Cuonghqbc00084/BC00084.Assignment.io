@@ -13,11 +13,12 @@
 
         $sql = "DELETE FROM product WHERE product_id='$id'";
 
-        if($conn -> query($sql) == true){
-            unlink($image_path);                // Delete image
-            header("Location: index.php?page=ListProduct"); 
-        }
-        else
+        if ($conn->query($sql)) {
+            // The DELETE query was successful, proceed with additional actions
+            unlink($image_path); // Delete image
+            header("Location: index.php?page=ListProduct");
+        } else {
             echo "Delete product failed!";
+        }
     }
 ?>

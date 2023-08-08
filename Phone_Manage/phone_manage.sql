@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jul 24, 2023 at 10:05 AM
--- Server version: 10.4.25-MariaDB
--- PHP Version: 8.1.10
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th8 07, 2023 lúc 08:23 AM
+-- Phiên bản máy phục vụ: 10.4.25-MariaDB
+-- Phiên bản PHP: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `product_manage`
+-- Cơ sở dữ liệu: `phone_manage`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `adminaccount`
+-- Cấu trúc bảng cho bảng `adminaccount`
 --
 
 CREATE TABLE `adminaccount` (
@@ -34,7 +34,7 @@ CREATE TABLE `adminaccount` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `adminaccount`
+-- Đang đổ dữ liệu cho bảng `adminaccount`
 --
 
 INSERT INTO `adminaccount` (`admin_username`, `admin_password`, `admin_fullname`) VALUES
@@ -44,7 +44,7 @@ INSERT INTO `adminaccount` (`admin_username`, `admin_password`, `admin_fullname`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contact`
+-- Cấu trúc bảng cho bảng `contact`
 --
 
 CREATE TABLE `contact` (
@@ -57,7 +57,7 @@ CREATE TABLE `contact` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `contact`
+-- Đang đổ dữ liệu cho bảng `contact`
 --
 
 INSERT INTO `contact` (`contact_id`, `contact_name`, `contact_email`, `contact_title`, `contact_message`, `contact_time`) VALUES
@@ -67,7 +67,7 @@ INSERT INTO `contact` (`contact_id`, `contact_name`, `contact_email`, `contact_t
 -- --------------------------------------------------------
 
 --
--- Table structure for table `invoice`
+-- Cấu trúc bảng cho bảng `invoice`
 --
 
 CREATE TABLE `invoice` (
@@ -79,7 +79,7 @@ CREATE TABLE `invoice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `invoice`
+-- Đang đổ dữ liệu cho bảng `invoice`
 --
 
 INSERT INTO `invoice` (`id`, `user_id`, `total_price`, `create_date`, `address`) VALUES
@@ -93,7 +93,7 @@ INSERT INTO `invoice` (`id`, `user_id`, `total_price`, `create_date`, `address`)
 -- --------------------------------------------------------
 
 --
--- Table structure for table `invoice_detail`
+-- Cấu trúc bảng cho bảng `invoice_detail`
 --
 
 CREATE TABLE `invoice_detail` (
@@ -104,7 +104,7 @@ CREATE TABLE `invoice_detail` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `invoice_detail`
+-- Đang đổ dữ liệu cho bảng `invoice_detail`
 --
 
 INSERT INTO `invoice_detail` (`id`, `product_id`, `quantity`, `invoice_id`) VALUES
@@ -123,7 +123,7 @@ INSERT INTO `invoice_detail` (`id`, `product_id`, `quantity`, `invoice_id`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product`
+-- Cấu trúc bảng cho bảng `product`
 --
 
 CREATE TABLE `product` (
@@ -135,11 +135,11 @@ CREATE TABLE `product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `product`
+-- Đang đổ dữ liệu cho bảng `product`
 --
 
 INSERT INTO `product` (`product_id`, `product_name`, `product_price`, `product_description`, `product_image`) VALUES
-(78, 'Mac Book', 40000, 'Apple M1', 'Images/1670174418-Macbook-removebg-preview.png'),
+(78, 'Mac Book', 40000, 'Apple M1', 'Images/1690514341-App.png'),
 (80, 'Acer', 12000, 'Asprie 7', 'Images/1670174429-acer-aspire-7-gaming-a715-42g-removebg-preview.png'),
 (81, 'HP', 30000, 'Victus 16', 'Images/1670174442-hp-victus-16-d0292tx-i5-removebg-preview.png'),
 (82, 'Asus', 20000, 'Vivo book', 'Images/1670174464-asus-vivobook-15x-oled--removebg-preview.png'),
@@ -147,12 +147,13 @@ INSERT INTO `product` (`product_id`, `product_name`, `product_price`, `product_d
 (84, 'Lenovo', 25000, 'Yoga 7', 'Images/1670174523-lenovo-yoga-duet-7-13itl6-i7-removebg-preview.png'),
 (85, 'Dell', 12000, 'G15', 'Images/1670174535-dell-gaming-g15-5515-r5-p105f004dgr-291121-114930-600x600-removebg-preview.png'),
 (87, 'Acer', 20000, 'Nitro 5', 'Images/1670174559-Acernitro5-removebg-preview.png'),
-(88, 'Lenovo', 60000, 'Legion 5', 'Images/1670174570-lenovo-legion-5-15iah7-i5-82rc003wvn-a-thumb-600x600-removebg-preview.png');
+(88, 'Lenovo', 60000, 'Legion 5', 'Images/1670174570-lenovo-legion-5-15iah7-i5-82rc003wvn-a-thumb-600x600-removebg-preview.png'),
+(95, 'Bánh xèo', 20000, 'adsds', 'Images/1691369661-about.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Cấu trúc bảng cho bảng `user`
 --
 
 CREATE TABLE `user` (
@@ -166,42 +167,41 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `user`
+-- Đang đổ dữ liệu cho bảng `user`
 --
 
 INSERT INTO `user` (`user_id`, `user_fullname`, `user_email`, `user_phonenumber`, `user_password`, `user_address`, `user_status`) VALUES
-(1, 'User 01', 'user1@btec.com', '0396514864', '123456', 'KP Phước Thành Lập, Thị trấn Gò Quao, Kiên Giang', 1),
+(1, 'User 01', 'user1@btec.com', '0396514864', 'e10adc3949ba59abbe56e057f20f883e', 'KP Phước Thành Lập, Thị trấn Gò Quao, Kiên Giang', 1),
 (2, 'User 02', 'user2@btecct.com', '0393569978', 'e10adc3949ba59abbe56e057f20f883e', '38 Lê Văn Sĩ, quận 5, TP Hồ Chí Minh', 1),
 (3, 'User 03', 'user03@btec.com', '03513215462', 'e40f01afbb1b9ae3dd6747ced5bca532', '44 Đ. Nguyễn Khuyến, Tân An, Ninh Kiều, Cần Thơ, Vietnam', 1),
 (4, 'User 04', 'user04@gmail.com', '0393459983', '25d55ad283aa400af464c76d713c07ad', '72 Bùi Tá Hán, Khuê Mỹ, Ngũ Hành Sơn, Đà Nẵng, Việt Nam', 1),
-(5, 'User 05', 'user05@btec.com', '0355646546', '62146513132', 'Floor 2 at Q Industries Vietnam Lot 9, road 7, Quận 7, Thành phố Hồ Chí Minh, Vietnam', 1),
-(22, 'cuong', 'huynhcuongbb@gmail.com', '0393569983', '123456', 'Can Tho City', 1);
+(5, 'User 05', 'user05@btec.com', '0355646546', '62146513132', 'Floor 2 at Q Industries Vietnam Lot 9, road 7, Quận 7, Thành phố Hồ Chí Minh, Vietnam', 1);
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `adminaccount`
+-- Chỉ mục cho bảng `adminaccount`
 --
 ALTER TABLE `adminaccount`
   ADD PRIMARY KEY (`admin_username`);
 
 --
--- Indexes for table `contact`
+-- Chỉ mục cho bảng `contact`
 --
 ALTER TABLE `contact`
   ADD PRIMARY KEY (`contact_id`);
 
 --
--- Indexes for table `invoice`
+-- Chỉ mục cho bảng `invoice`
 --
 ALTER TABLE `invoice`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `invoice_detail`
+-- Chỉ mục cho bảng `invoice_detail`
 --
 ALTER TABLE `invoice_detail`
   ADD PRIMARY KEY (`id`),
@@ -209,63 +209,63 @@ ALTER TABLE `invoice_detail`
   ADD KEY `product_id` (`product_id`);
 
 --
--- Indexes for table `product`
+-- Chỉ mục cho bảng `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`product_id`);
 
 --
--- Indexes for table `user`
+-- Chỉ mục cho bảng `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `contact`
+-- AUTO_INCREMENT cho bảng `contact`
 --
 ALTER TABLE `contact`
   MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table `invoice`
+-- AUTO_INCREMENT cho bảng `invoice`
 --
 ALTER TABLE `invoice`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `invoice_detail`
+-- AUTO_INCREMENT cho bảng `invoice_detail`
 --
 ALTER TABLE `invoice_detail`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- AUTO_INCREMENT for table `product`
+-- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
-  MODIFY `product_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
+  MODIFY `product_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `user_id` int(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- Constraints for dumped tables
+-- Các ràng buộc cho các bảng đã đổ
 --
 
 --
--- Constraints for table `invoice`
+-- Các ràng buộc cho bảng `invoice`
 --
 ALTER TABLE `invoice`
   ADD CONSTRAINT `invoice_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`);
 
 --
--- Constraints for table `invoice_detail`
+-- Các ràng buộc cho bảng `invoice_detail`
 --
 ALTER TABLE `invoice_detail`
   ADD CONSTRAINT `invoice_detail_ibfk_1` FOREIGN KEY (`invoice_id`) REFERENCES `invoice` (`id`),

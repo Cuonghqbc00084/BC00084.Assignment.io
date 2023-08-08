@@ -2,7 +2,7 @@
     session_start();
 
     if(isset($_POST['btnLogin'])){
-        require_once "DatabaseConnect.php";
+        require_once ("DatabaseConnect.php");
         
         $username = $_POST['username'];
         $password = $_POST['password']; 
@@ -32,20 +32,28 @@
 </head>
 <body>
     <form action="" method="POST" onsubmit="return checkLoginForm()">
-        <div class="login-form">
-            <h2 class="login-header">ADMINISTRATOR</h2>
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter username" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Enter password" required>
-            </div>
-            <div class="form-group">
-                <input class="btn" type="submit" value="Login" name="btnLogin">
-            </div>
-        </div>
+        <table id="tbLogin">
+            <tr>
+                <th colspan="2" id="thAddProduct">ADMINISTRATOR LOGIN</th>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td>
+                    <input type="text" id="username" name="username" placeholder="Entry username">
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="password" id="password" placeholder="Entry password">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="btnAddProduct">
+                    <input id="btn1" type="submit" value="Login" name="btnLogin">
+                </td>
+            </tr>
+        </table>
     </form>
 </body>
 </html>

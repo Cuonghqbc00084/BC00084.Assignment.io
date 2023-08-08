@@ -1,5 +1,11 @@
 <html>
     <table width="100%" border="1" style="border-collapse:collapse">
+    <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="product_taital">Our Products</h1>
+               </div>
+            </div>
+
 
         <?php
             require_once ("admin/DatabaseConnect.php");
@@ -15,7 +21,6 @@
                                     <img src=\"admin/{$row['product_image']}\" height='100px'><br/>
                                     "?> <?php echo number_format($row['product_price'],0) ?> <?php echo "VND
                                 </center></a>
-                                <center><a href='index.php?page=Cart&action=add&id={$row['product_id']}'><button>Add to cart</button></a></center>
                             </td>";
                 if($i % 3 == 2)
                     echo "</tr>";
@@ -26,5 +31,11 @@
         ?>
     </table>
 </html>
+
+
+
+
+
+
 
 

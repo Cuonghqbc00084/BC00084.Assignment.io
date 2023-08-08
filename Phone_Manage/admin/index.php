@@ -14,30 +14,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrator page</title>
+    <title>Administrator Page</title>
     <link rel="stylesheet" href="CSS/MenuStyles.css">
 </head>
 <body>
-    <div style="text-align: right; margin-right: 5%">
-        <?php
-            echo "Welcome " .  $AdminName;
-        ?>
-        <a id="Log" href="Logout.php"><button>Logout</button></a>
+    <div class="header">
+        <div class="admin-info">
+            <?php
+                echo "Welcome " .  $AdminName;
+            ?>
+            <a class="logout-button" href="Logout.php">Logout</a>
+        </div>
     </div>
 
-<!-- Menu -->
-    <div id="tabs">
+    <!-- Menu -->
+    <div class="menu">
         <ul>
-            <li><a href="index.php?page=AddProduct"><span>Add Product</span></a></li>
-            <li><a href="index.php?page=ListProduct"><span>List Product</span></a></li>
-            <li><a href="index.php?page=ListUser"><span>List User</span></a></li>
-            <li><a href="index.php?page=ListFeedback"><span>List Feedback</span></a></li>
-            <li><a href="index.php?page=ListInvoice"><span>List Invoice</span></a></li>
+            <li><a href="index.php?page=ListProduct">List Product</a></li>
+            <li><a href="#">List User</a></li>
+            <li><a href="#">List Feedback</a></li>
+            <li><a href="#">List Invoice</a></li>
         </ul>
     </div>
 
-<!-- Content -->
-    <div>
+    <!-- Content -->
+    <div class="content">
         <?php
             if(isset($_GET['page'])){
                 if($_GET['page'] === "AddProduct")
@@ -58,10 +59,6 @@
                     require_once ("ListFeedback.php");
                 else if($_GET['page'] === "DeleteFeedback")
                     require_once ("DeleteFeedback.php");
-                else if($_GET['page'] === "ListInvoice")
-                    require_once ("ListInvoice.php");
-                else if($_GET['page'] === "InvoiceDetail")
-                    require_once ("InvoiceDetail.php");
             }
             else
                 echo "<marquee direction='right' scrolldelay='80'>Welcome to Administrator website</marquee>";

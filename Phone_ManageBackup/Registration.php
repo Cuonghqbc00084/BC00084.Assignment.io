@@ -13,20 +13,10 @@
         $result = $conn -> query($sql);
 
         if($result){
-            header("Location: Login.php");
-            
+            header("Location: index.php");
         }
-        else
-        echo "Can't access the login page!";
     }
-
-
-    
 ?>
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -70,7 +60,7 @@
             </tr>
             <tr id="userRegistration">
                 <td colspan="2">
-                   <input type="submit" value="Registration" id="registration" name="registrationBtn">
+                    <input type="submit" value="Registration" id="registration" name="registrationBtn">
                 </td>
             </tr>
         </table>

@@ -1,5 +1,5 @@
 <?php
-require_once ("css/admin/DatabaseConnect.php");
+require_once ("admin/DatabaseConnect.php");
 if(!isset($_SESSION['user'])){
     echo '<meta http-equiv="Refresh" content="0; url=index.php?page=Login">';
 }
@@ -52,6 +52,54 @@ if(isset($_GET["action"])){
         margin: auto 0;
         text-align: center;
     }
+
+   
+        /* Your existing CSS styles for the table and other elements go here */
+        /* ... */
+
+        /* New styles for the customer information section */
+        #do_action {
+            background-color: #f2f2f2;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .shopper-info {
+            margin-top: 20px;
+        }
+
+        .shopper-info input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .shopper-info button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #deleteButton {
+        background-color: red;
+        color: white;
+        border: 1px solid red;
+        padding: 10px 20px;
+        cursor: pointer;
+        }
+
+    </style>
 </style>
 <th ><b>Cart</b></th>
 <table border='1' width="100%" style="border-collapse: collapse;">
@@ -99,7 +147,8 @@ if(isset($_GET["action"])){
                 <p class="cart_total_price"><?php  echo number_format($quantity*$p["product_price"],0); ?></p>
             </td>
             <td class="cart_delete" style="text-align:center">
-                <a class="cart_quantity_delete" href="?page=Cart&action=delete&id=<?php echo $id;?>"><button>Delete</button></a>
+                <a class="cart_quantity_delete" href="?page=Cart&action=delete&id=<?php echo $id;?>"><button id="deleteButton">Delete</button>
+</a>
             </td>
         </tr>
         <?php } ?>
@@ -108,21 +157,19 @@ if(isset($_GET["action"])){
     </tbody>
 </table>
 <section id="do_action">
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-sm-6">
-                <div class="total_area">
-                    <div class="shopper-info">
-                        <p>Customer Information</p>
-                        <form action="Checkout.php" method="POST">
-                            <input type="text" name="address" style="width: 50%" value="<?php echo $_SESSION["user"]["user_address"]?>" placeholder="Input address">
-                            <button type="submit" class="btn btn-primary" name="btnCheckout">Checkout</button>
-                        </form>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="total_area">
+                        <div class="shopper-info">
+                            <p>Customer Information</p>
+                            <form action="Checkout.php" method="POST">
+                                <input type="text" name="address" value="<?php echo $_SESSION["user"]["user_address"] ?>" placeholder="Input address">
+                                <button type="submit" class="btn btn-primary" name="btnCheckout">Checkout</button>
+                            </form>
+                        </div>
                     </div>
-                        
                 </div>
             </div>
         </div>
-    </div>
-</section><!--/#do_action-->
+    </section><!--/#do_action-->
