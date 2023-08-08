@@ -38,5 +38,5 @@
             echo "Insert failed!";
     }
     else
-        echo "Access denied!";
+        echo "Access denied!";  
 ?>

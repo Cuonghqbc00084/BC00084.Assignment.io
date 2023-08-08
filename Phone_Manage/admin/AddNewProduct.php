@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add New product</title>
-    <link rel="stylesheet" href="CSS/Product_Manage_Style.css">
-    <script src="JS/Product_Manage_Script.js"></script>
+    <link rel="stylesheet" href="css/Product_Manage_Style.css">
+    <script src="js/Product_Manage_Script.js"></script>
 </head>
 <body>
     <form action="AddNewProductProcess.php" method="post" onsubmit="return ValidateForm()" enctype="multipart/form-data">

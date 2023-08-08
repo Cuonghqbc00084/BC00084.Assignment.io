@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 --
 -- Cấu trúc bảng cho bảng `adminaccount`
 --
-
+  
 CREATE TABLE `adminaccount` (
   `admin_username` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `admin_password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,

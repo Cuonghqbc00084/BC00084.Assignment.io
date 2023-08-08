@@ -41,7 +41,7 @@ if(isset($_GET["action"])){
                         }
                     }
                 }
-            }
+            }   
             break;
     }
     echo '<meta http-equiv="Refresh" content="0; url=index.php?page=Cart">';

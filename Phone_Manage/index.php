@@ -9,18 +9,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Modern Website</title>
-    <link rel="stylesheet" href="CSS/Style.css">
-    <link rel="stylesheet" href="CSS/Proudct.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/Proudct.css">
 
-    <script src="JavaScript/JSscript.js"></script>
-
-
-
+    <script src="js/JSscript.js"></script>
 </head>
 
 <body>
 <header style="text-align: center; padding: 20px 0;">
-    <img src="Image/logophone.png" alt="Logo Phone" height="100">
+    <img src="images/logophone.png" alt="Logo Phone" height="100">
 </header>
 
     <nav>
@@ -75,7 +72,7 @@
     <p>Email: contact@example.com</p>
     <p>Follow us on social media:
         <a href="https://www.facebook.com/your_facebook_page" class="social-button" target="_blank">
-            <img src="Image/fb.png" alt="Facebook" height="20px">
+            <img src="images/fb.png" alt="Facebook" height="20px">
         </a>
     </p>
     <p>© 2023 My Website. All rights reserved.</p>

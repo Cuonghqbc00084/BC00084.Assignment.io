@@ -18,7 +18,7 @@
         else
             echo "Login failed!";
     }
-?>
+?>  
 
 <!DOCTYPE html>
 <html lang="en">

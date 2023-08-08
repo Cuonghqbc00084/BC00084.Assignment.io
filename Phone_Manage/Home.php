@@ -24,7 +24,7 @@
             if($i % 3 != 0)
                     echo "</tr>";
         ?>
-    </table>
+    </table>    
 </html>
 
 

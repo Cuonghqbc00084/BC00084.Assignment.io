@@ -64,7 +64,7 @@
     color: #333;
     margin-bottom: 5px;
 }
-
+    
 .form-group input {
     width: 100%;
     padding: 10px;

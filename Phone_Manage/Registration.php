@@ -29,51 +29,51 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User registration</title>
-    <link rel="stylesheet" href="CSS/Style.css">
-    <script src="JavaScript/JSscript.js"></script>
+    <title>User Registration</title>
 </head>
 <body>
     <form action="" method="POST" onsubmit="return checkUserRegistration()">
-        <table id="userRegistration" width="80%">
-            <tr>
-                <th colspan="2" id="userTH">USER REGISTRATION</th>
-            </tr>
-            <tr>
-                <td>Full name</td>
-                <td><input type="fullname" name="fullname" id="fullname"></td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td><input type="email" name="email" id="email"></td>
-            </tr>
-            <tr>
-            <tr>
-                <td>Phone number</td>
-                <td><input type="text" name="phonenumber" id="phonenumber"></td>
-            </tr>
-                <td>Password</td>
-                <td><input type="password" name="password" id="password"></td>
-            </tr>
-            <tr>
-                <td>Retype password</td>
-                <td><input type="password" name="password2" id="password2"></td>
-            </tr>
-            <tr>
-                <td>Address</td>
-                <td><input type="text" name="address" id="address" style="width: 80%"></td>
-            </tr>
-            <tr id="userRegistration">
-                <td colspan="2">
-                   <input type="submit" value="Registration" id="registration" name="registrationBtn">
-                </td>
-            </tr>
-        </table>
+    <table border="0" cellpadding="10" cellspacing="0" align="center" width="400">
+        <tr>
+            <td colspan="2" align="center">
+                <h2>User Registration</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>Full name</td>
+            <td><input type="text" name="fullname"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Phone number</td>
+            <td><input type="text" name="phonenumber"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <td>Retype password</td>
+            <td><input type="password" name="password2"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" name="address"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+            <input type="submit" value="Registration" name="registrationBtn" style="background-color: #4CAF50; color: #fff;"></td>
+        </tr>
+    </table>
     </form>
 </body>
 </html>
+
+
+
+

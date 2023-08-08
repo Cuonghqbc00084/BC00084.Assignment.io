@@ -20,7 +20,7 @@
             $info = "Submit feedback successful.";
         }
     }
-?>
+?>  
 
 <!DOCTYPE html>
 <html>

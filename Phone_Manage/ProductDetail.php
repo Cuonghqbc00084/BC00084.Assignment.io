@@ -12,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Product detail</title>
-    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
     <table width="100%" border="1" style="border-collapse:collapse">
@@ -58,4 +58,4 @@
         </tr>
     </table>
 </body>
-</html>
+</html> 

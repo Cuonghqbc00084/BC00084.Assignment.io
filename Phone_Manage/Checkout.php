@@ -21,7 +21,7 @@
                         VALUES (null,'{$p['product_id']}','{$quantity}','{$invoice_id}')";
                     $conn->query($sql);
                 }
-            }
+            }   
             $conn->commit();
             unset($_SESSION['cart']);
             echo "<script>
