@@ -23,7 +23,7 @@
         <a class="tdAddProduct" href="index.php?page=AddProduct">Add Product</a>
     </div>
         </tr>
-        
+            
         <tr>
             <th width="10%">
                 Product ID

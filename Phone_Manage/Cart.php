@@ -98,7 +98,7 @@ if(isset($_GET["action"])){
         padding: 10px 20px;
         cursor: pointer;
         }
-
+        
     </style>
 </style>
 <th ><b>Cart</b></th>

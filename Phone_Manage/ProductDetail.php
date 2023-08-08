@@ -35,7 +35,7 @@
                 <img src="admin/<?php echo $row['product_image']; ?>" height="200px">
             </td>
         </tr>
-        <tr>
+        <tr>    
             <td class="tbDetail">
                 <b><i>Product price:</i></b>
             </td>

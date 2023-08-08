@@ -40,7 +40,7 @@
             ?>
         </ul>
     </nav>
-
+                
     <main>
         <?php
             if (isset($_GET['page'])) {

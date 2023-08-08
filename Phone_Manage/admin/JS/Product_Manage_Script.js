@@ -6,7 +6,7 @@ function ValidateForm(){
     var ProductName = document.getElementById("ProductName").value;
     var ProductPrice = document.getElementById("ProductDescription").value;
     var ProductImage = document.getElementById("ProductImage").value;
-
+    
     if(ProductName == ""){
         alert("Product name is empty!");
         document.getElementById("ProductName").focus();

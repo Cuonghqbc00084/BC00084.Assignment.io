@@ -53,7 +53,7 @@
     font-size: 24px;
     margin-bottom: 20px;
 }
-
+    
 .form-group {
     margin-bottom: 20px;
 }

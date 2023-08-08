@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/Product_Manage_Style.css">
     <script src="js/Product_Manage_Script.js"></script>
 </head>
-<body>
+<body>  
     <form action="AddNewProductProcess.php" method="post" onsubmit="return ValidateForm()" enctype="multipart/form-data">
         <table id="tbAddNewProduct">
             <tr>

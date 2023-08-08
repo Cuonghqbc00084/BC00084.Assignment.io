@@ -11,7 +11,7 @@
         }
     }
 ?>
-    
+        
 <?php
     if(isset($_POST['btnModify'])){
         $product_name = $_POST['ProductName'];

@@ -12,7 +12,7 @@
         if($_FILES['ProductImage']['error'] != 0){
             echo "Image is error!";
             die();
-        }
+        }   
         else if($_FILES['ProductImage']['size'] > 5242880){  // 5MB
             echo "Max Image size is 5MB";
             die();

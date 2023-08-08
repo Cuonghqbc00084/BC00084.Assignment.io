@@ -107,6 +107,6 @@ function checkContact(){
 	}
 	else
 		return true;
-}
+}			
 
 

@@ -63,7 +63,7 @@
             else
                 echo "<marquee direction='right' scrolldelay='80'>Welcome to Administrator website</marquee>";
         ?>
-    </div>
+    </div>  
 </body>
 </html>
             
