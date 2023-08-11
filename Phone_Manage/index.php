@@ -17,7 +17,7 @@
 
 <body>
 <header style="text-align: center; padding: 20px 0;">
-    <img src="images/logophone.png" alt="Logo Phone" height="100">
+    <img src="images/logolego.png" alt="Logo Phone" height="100">
 </header>
 
     <nav>

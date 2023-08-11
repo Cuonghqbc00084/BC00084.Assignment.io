@@ -2,7 +2,7 @@
     $host = "localhost";
     $username = "root";
     $password = "";
-    $database = "phone_manage";
+    $database = "lego_manage";
 
     $conn = mysqli_connect($host, $username, $password, $database);
 
