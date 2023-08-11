@@ -44,3 +44,4 @@ function checkLoginForm(){
         return true;
     }
 }
+

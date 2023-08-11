@@ -21,4 +21,6 @@
             echo "Delete product failed!";
         }       
     }
+
+  
 ?>

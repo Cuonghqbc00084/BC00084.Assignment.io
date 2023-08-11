@@ -87,7 +87,7 @@
     <table>
         <tr>
             <td>Address:</td>
-            <td>KP Phước Thành Lập, Thị trấn Gò Quao, Kiên Giang</td>
+            <td>Phuoc Thanh Lap Neighbourhood, Go Quao Town, Kien Giang Province</td>
         </tr>
         <tr>
             <td>Phone:</td>

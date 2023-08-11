@@ -69,7 +69,10 @@
             </td>
             <td class="tdEdit">
                 <a href="index.php?page=ModifyProduct&id=<?php echo $row['product_id']; ?>">Modify</a> |
-                <a href="index.php?page=DeleteProduct&id=<?php echo $row['product_id']; ?>">Delete</a> 
+                <a href="index.php?page=DeleteProduct&id=<?php echo $row['product_id']; ?>" onclick="return confirm('Do you want to delete product?')">Delete</a>
+
+                
+
             </td>
         </tr>
 
@@ -80,6 +83,7 @@
                 echo '<tr><td colspan="6">No products found.</td></tr>';
             }
         ?>
+    
 
 
     </table>
