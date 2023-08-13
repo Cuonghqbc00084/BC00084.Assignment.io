@@ -19,9 +19,6 @@
         else
         echo "Can't access the login page!";
     }
-
-
-    
 ?>
 
 

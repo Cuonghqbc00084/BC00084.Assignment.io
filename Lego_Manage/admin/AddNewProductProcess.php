@@ -1,5 +1,4 @@
 <?php
-
     if(isset($_POST['btnAdd'])){
         $productName = $_POST['ProductName'];
         $productPrice = $_POST['ProductPrice'];
