@@ -3,7 +3,7 @@
 
     $sql = "SELECT * FROM product";
 
-    $result = $conn -> query($sql);     // $result = mysqli_query($conn, $sql);
+    $result = $conn -> query($sql);     
 ?>
 
 <!DOCTYPE html>
