@@ -11,7 +11,6 @@
     <title>My Modern Website</title>
     <link rel="stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="css/Proudct.css">
-
     <script src="js/JSscript.js"></script>
 </head>
 
@@ -76,10 +75,9 @@
         </a>
     </p>
     <p>© 2023 My Website. All rights reserved.</p>
-</footer>
+    </footer>
 
 </body>
-
 </html>
 
 

@@ -75,6 +75,7 @@
     <title>Modify product</title>
     <link rel="stylesheet" href="CSS/Product_Manage_Style.css">
 </head>
+
 <body>
 <form action="" method="post" enctype="multipart/form-data">
         <table id="tbAddNewProduct">
@@ -117,4 +118,5 @@
         </table>
     </form>
 </body>
+
 </html>

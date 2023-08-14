@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="CSS/Product_Manage_Style.css">
     <script src="JS/Product_Manage_Script.js"></script>
 </head>
+
 <body>
     <form action="" method="POST" onsubmit="return checkLoginForm()">
         <div class="login-form">
@@ -48,4 +49,5 @@
         </div>
     </form>
 </body>
+
 </html>
