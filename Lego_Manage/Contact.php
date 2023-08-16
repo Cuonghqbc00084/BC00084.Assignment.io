@@ -127,5 +127,6 @@
     </form>
 
     <?php echo "<i><b>".$info."</b></i>"; ?>
+    
 </body>
 </html>

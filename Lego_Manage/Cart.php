@@ -53,11 +53,6 @@ if(isset($_GET["action"])){
         text-align: center;
     }
 
-   
-        /* Your existing CSS styles for the table and other elements go here */
-        /* ... */
-
-        /* New styles for the customer information section */
         #do_action {
             background-color: #f2f2f2;
             padding: 20px 0;

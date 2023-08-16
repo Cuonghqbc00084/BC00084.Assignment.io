@@ -20,8 +20,8 @@
         <tr id="ListProductTitle">
             <td colspan="6">LIST PRODUCT</td>
             <div class="add-product-wrapper">
-        <a class="tdAddProduct" href="index.php?page=AddProduct">Add Product</a>
-    </div>
+            <a class="tdAddProduct" href="index.php?page=AddProduct">Add Product</a>
+            </div>
         </tr>
             
         <tr>
@@ -43,7 +43,6 @@
             <th width="15%">
                 Edit
             </th>
-            
         </tr>
     
         <?php
@@ -70,10 +69,8 @@
             <td class="tdEdit">
                 <a href="index.php?page=ModifyProduct&id=<?php echo $row['product_id']; ?>">Modify</a> |
                 <a href="index.php?page=DeleteProduct&id=<?php echo $row['product_id']; ?>" onclick="return confirm('Do you want to delete product?')">Delete</a>
-
-                
-
             </td>
+            
         </tr>
 
         <?php
