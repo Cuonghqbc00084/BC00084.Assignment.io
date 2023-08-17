@@ -17,6 +17,7 @@
     <title>Administrator Page</title>
     <link rel="stylesheet" href="CSS/MenuStyles.css">
 </head>
+
 <body>
     <div class="header">
         <div class="admin-info">
@@ -65,5 +66,6 @@
         ?>
     </div>  
 </body>
+
 </html>
             
