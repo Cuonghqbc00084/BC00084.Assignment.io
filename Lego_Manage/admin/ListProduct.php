@@ -51,6 +51,7 @@
         ?>
 
         <tr>
+            
             <td class="tdEdit">
                 <?php echo $row['product_id']; ?>
             </td>
